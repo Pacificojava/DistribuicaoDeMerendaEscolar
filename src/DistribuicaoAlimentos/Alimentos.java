@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Alimentos {
 	String Nome;
-	int qGramas = 1000;
+	float qGramas = 1000;
 	
 	public Alimentos() {
 
@@ -18,8 +18,9 @@ public class Alimentos {
 			System.out.println("ADICIONE UM ALIMENTO Á LISTA: ");
 			alimento.Nome = scanner.nextLine();
 			
-			System.out.println("ADICIONE A QUANTIDADE EM GRAMAS (1 Kg é 1000): ");
+			System.out.println("ADICIONE A QUANTIDADE EM GRAMAS (1 kilo = 1000gramas): ");
 			alimento.qGramas = scanner.nextInt();
+		    
 			
 			System.out.println(alimento.Nome + " | " + alimento.qGramas +" GRAMAS");
 				
